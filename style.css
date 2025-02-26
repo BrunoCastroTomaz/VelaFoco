@@ -12,6 +12,7 @@ body {
 header {
     position: absolute;
     top: 0px;
+    font-size: 10px;
 }
 
 .container {
@@ -31,8 +32,9 @@ header {
 }
 
 .timer {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .progress-bar {
@@ -47,11 +49,75 @@ header {
 .progress-fill {
     width: 25%;
     height: 100%;
-    background-color: orange;
+    background-color: #E58D00;
 }
 
 .progress-text {
     font-size: 1em;
-    margin-bottom: 20px;
+    color: #FEEB00;
+    text-align: left;
+   
 }
+
+nav{
+    background-color: black;
+    
+}
+
+ul {
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: #79747E;
+    font-size: 18 px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+a:hover{
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.clock-icon {
+    width: 35px; 
+    margin-right: 8px; 
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center; 
+    gap: 40px; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+ 
+}
+
+.vela-image {
+    width: 125px; 
+    height: auto;
+    align-self: center; 
+    padding-left: 100px;
+}
+
+
+@media (max-width: 768px){
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
