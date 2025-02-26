@@ -5,7 +5,7 @@
 		<!-- fonte: https://www.w3schools.com/css/css_rwd_viewport.asp-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>VelaFoco</title>
-		<link rel="stylesheet" href="style.css"/>
+		<!-- <link rel="stylesheet" href="style.css"/> -->
 	</head>
 	<body>
 		<header>
@@ -13,31 +13,39 @@
 		</header>
 
 		<main class="container">
-			<div class="content">
+			<section class="content"> <!--LUIZ: Usei section ao invés de div aqui para agrupar esse conteúdo do site-->
+				<!--LUIZ: Eu dei uma pesquisada, e normalmente o nav fica no header, mas no nosso
+				caso eu manteria aqui mesmo. Acho que faz mais sentido.-->
 				<nav>
 					<ul>
 						<li><a href="#">Descanso</a></li>
 						<li><a href="#">Foco</a></li>
 					</ul>
 				</nav>
-		
-
-
+				
+				<!--LUIZ: ajustei os ALT das imagens.-->
 				<article class="timer">
-					00:22:15
-					<img src="relogio.png" alt="Clock Icon" class="clock-icon">
+					<time>00:22:15</time> <!--LUIZ: Tag semântica para exibição de horário-->
+					<img src="relogio.png" alt="Ícone de relógio" class="clock-icon">
 				</article>
-		
-				<section class="progress-text">25% completo</section>
-				<section class="progress-bar">
+				
+				<!--LUIZ: Envolvi o código relacionado a barra de progresso nesse article-->
+				<!--Articles podem ser interpretados como "componentes" da página-->
+				<article class="progress-bar">
+					<p class="progress-text">25% completo</p>
 					<article class="progress-fill"></article>
-				</section>
-			</div>
-		
-			<!-- Image positioned next to all content -->
-			<img src="vela.png" alt="Vela Image" class="vela-image">
+				</article>
+
+			</section>
+			<img src="vela.png" alt="Vela acesa" class="vela-image">
 		</main>
-		
+
+		<!--LUIZ: Eu adicionaria um footer ao site, só por fazer parte da estrutura base mesmo.
+		Mas precisariamos acertar esse detalhezinho lá no protótipo para ficar condizente.-->
+		<footer>
+			<p>Grupo Pra Quem Tá Sem Grupo &copy; 2025</p>
+		</footer>
+
 	</body>
 
 </html>
