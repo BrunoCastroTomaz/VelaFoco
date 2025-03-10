@@ -1,62 +1,33 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 header {
     position: absolute;
     top: 0px;
     font-size: 10px;
 }
 
-.container {
-    text-align: center;
-    position: relative;
-}
-
-.labels {
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
     display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin: 0 auto 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.label {
-    font-size: 1.2em;
+.container {
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    flex: 1;
 }
 
-.timer {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-.progress-bar {
-    width: 300px;
-    height: 10px;
-    background-color: #333;
-    border-radius: 5px;
-    margin: 0 auto 10px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    width: 25%;
-    height: 100%;
-    background-color: #E58D00;
-}
-
-.progress-text {
-    font-size: 1em;
-    color: #FEEB00;
-    text-align: left;
-   
+.content {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+ 
 }
 
 nav{
@@ -85,24 +56,37 @@ a:hover{
     color: white;
 }
 
+.timer {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
 .clock-icon {
     width: 35px; 
     margin-right: 8px; 
 }
 
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center; 
-    gap: 40px; 
+.progress-bar {
+    width: 300px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+    overflow: hidden;
 }
 
-.content {
-    display: flex;
-    flex-direction: column; 
-    gap: 20px; 
- 
+.progress-text {
+    font-size: 1em;
+    color: #FEEB00;
+    text-align: left;
+   
+}
+
+.progress-fill {
+    width: 25%;
+    height: 100%;
+    background-color: #E58D00;
 }
 
 .vela-image {
@@ -112,6 +96,14 @@ a:hover{
     padding-left: 100px;
 }
 
+footer#rodape {
+    clear: both;
+    border-top: 1px solid;
+}
+
+footer#rodape p {
+    text-align: center;
+}
 
 @media (max-width: 768px){
     ul{
@@ -119,6 +111,3 @@ a:hover{
         align-items: center;
     }
 }
-
-
-
