@@ -1,4 +1,4 @@
-# VelaFoco
+# Candlefocus
 A focus pomodoro web site.
 
 <h2>Integrantes</h2>
@@ -10,3 +10,6 @@ RAFAELA PERROTI ZYNGIER (10395424)<br>
 
 Link para acessar o WebSite:
 https://brunocastrotomaz.github.io/VelaFoco/
+
+Favicon by author:
+gpritiranjan.deviantart.com
