@@ -6,12 +6,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
 }
 
 header {
-    top: 0px;
     font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: 20px;
 }
@@ -29,8 +28,8 @@ h1 {
     align-items: center;
     gap: 100px;
     flex: 1;
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: center; /* Center elements */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -46,18 +45,22 @@ h1 {
 nav{
     background-color: rgba(0, 0, 0, .5);
     border-bottom: 1px solid white;
+    text-align: center;
+    margin-left: 0;
 }
 
 ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    text-align: center;
     list-style: none;
 
 }
 .foco, .descanso {
     border: medium;
     margin: 0px;
+    text-align: center;
     border-radius: 4px;
     font-family: ArialRounded;
     font-size: 20px;
@@ -73,6 +76,7 @@ ul {
 
 a{
     text-decoration: none;
+    text-align: center;
     color: #79747E;
     font-size: 18 px;
     padding-bottom: 13px;
@@ -81,6 +85,7 @@ a{
 
 a:hover{
     color: white;
+    border-bottom: 1px solid white;;
 }
 
 .timer {
@@ -121,6 +126,10 @@ a:hover{
     width: 200px;
     background-color: #808080;
     transition: color 0.5s ease-in-out;
+}
+
+.start:hover {
+    background-color: #FEEB00;
 }
 .vela-image {
     width: 125px;
