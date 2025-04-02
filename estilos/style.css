@@ -74,7 +74,7 @@ ul {
     font-weight: bold;   
 }
 
-a{
+li{
     text-decoration: none;
     text-align: center;
     color: #79747E;
@@ -83,7 +83,7 @@ a{
     transition: 0.3s ease;
 }
 
-a:hover{
+li:hover{
     color: white;
     border-bottom: 1px solid white;;
 }
@@ -101,16 +101,20 @@ a:hover{
     background-color: #333;
     border-radius: 5px;
     margin: 20px auto 10px auto;
-    /*overflow: hidden;*/
+    position: relative; /* Para posicionar a camada de preenchimento */
+    overflow: hidden;
 }
 
-/*
 .progress-fill {
-    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
     height: 100%;
     background-color: #E58D00;
+    transition: width 1s linear; /* animação suave */
 }
-*/
+
 
 .start {
     cursor: pointer;
@@ -129,7 +133,7 @@ a:hover{
 }
 
 .start:hover {
-    background-color: #FEEB00;
+    background-color: #00befe;
 }
 .vela-image {
     width: 125px;

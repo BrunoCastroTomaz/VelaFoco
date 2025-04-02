@@ -7,7 +7,6 @@
 		<title>CandleFocus</title>
 		<link rel="stylesheet" href="estilos/style.css"/>
 		<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-		<script type="text/javascript" src="javascript/script.js"></script>
 	</head>
 	<body>
 		<header>
@@ -18,27 +17,32 @@
 			<section class="content">
 				<nav>
 					<ul>
-						<li><a href="index.html"><button id="fase-foco-pomodoro" class="foco">Foco</a></li>
-						<li><a href="descanso.html"><button id="fase-descanso-pomodoro" class="descanso">Descanso</a></li>
+						<li><button id="fase-foco-pomodoro" class="foco">Foco</li>
+						<li><button id="fase-descanso-pomodoro" class="descanso">Descanso</li>
 					</ul>
 				</nav>
 
 				<article class="timer">
-					<time id="timer">00:25:00</time>
-					<article class="progress-bar" id="progress-fill"></article>
+					<time><p id="timer"></p></time>
+					<article class="progress-bar">
+					<article class="progress-fill" id="progress-fill"></article>
+					</article>
 				</article>
 
 				<article>
-					<button id="start" class="start">START</button>
+					<button id="start" class="start" onclick="start()">START</button>
 				</article>
 			</section>
 			
-			<img src="imagens/vela.png" alt="Vela acesa" class="vela-image">
+			<section>
+				<img src="imagens/vela.png" alt="Vela acesa" class="vela-image">
+			</section>
 		</main>
 
 		<footer class="rodape">
 			<p>Candlefocus &copy; 2025</p>
 		</footer>
+		<script type="text/javascript" src="javascript/script.js"></script>
 
 	</body>
 
