@@ -162,12 +162,12 @@ li:hover{
 
 
 
-footer#rodape {
+footer.rodape {
     clear: both;
     border-top: 1px solid;
 }
 
-footer#rodape p {
+footer.rodape p {
     font-family: ArialRounded;
     text-align: center;
 
