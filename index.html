@@ -2,7 +2,6 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8"/>
-		<!-- fonte: https://www.w3schools.com/css/css_rwd_viewport.asp-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>CandleFocus</title>
 		<link rel="stylesheet" href="estilos/style.css"/>
@@ -34,12 +33,15 @@
 				</article>
 			</section>
 			
-			<section>
-				<img src="imagens/vela.png" alt="Vela acesa" class="vela-image">
+			<section id="video-container">
+				 <video id="timelapse-vela" loop>
+					<source src="./videos/timelapse-vela.mp4" type="video/mp4">
+					<p>Navegador não suporta vídeos.</p>
+				 </video>
 			</section>
 		</main>
 
-		<footer id="rodape">
+		<footer class="rodape">
 			<p>Candlefocus &copy; 2025</p>
 		</footer>
 		<script type="text/javascript" src="javascript/script.js"></script>
@@ -47,4 +49,3 @@
 	</body>
 
 </html>
-
