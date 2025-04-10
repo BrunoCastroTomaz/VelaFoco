@@ -22,6 +22,7 @@ function updateTimerDisplay() {
 }
 
 function startTimer() {
+    playVideo()
     if (timerInterval) {
         clearInterval(timerInterval);
     }
@@ -49,6 +50,7 @@ function startTimer() {
 }
 
 function pauseTimer() {
+    pauseVideo();
     clearInterval(timerInterval);
     timerInterval = null;
     startButton.textContent = "RESUME";
@@ -58,6 +60,7 @@ function pauseTimer() {
 function start() {
     updateTimerDisplay();
     startTimer();
+    playVideo();
 }
 
 //Atualiza a barra de progresso
@@ -90,3 +93,15 @@ breakButton.addEventListener("click", () => {
 // Inicializa o display
 updateTimerDisplay();
 startButton.onclick = start;
+
+
+function playVideo () {
+    const video = document.getElementById("timelapse-vela")
+    video.playbackRate = 0.0625; // Essa é a velocidade mais baixa possível
+    video.play();
+}
+
+function pauseVideo () {
+    const video = document.getElementById("timelapse-vela")
+    video.pause();
+}

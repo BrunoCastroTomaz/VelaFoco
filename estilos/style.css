@@ -141,6 +141,26 @@ li:hover{
     padding-left: 0;
 }
 
+#video-container {
+    width: 350px; /* Largura Visível */
+    height: 360px; /* Altura Visível */
+    overflow: hidden; /* Esconde as laterais*/
+    position: relative; /* Posição relativa em relação ao HTML */
+}
+
+#timelapse-vela {
+    width: 600px; /*Quanto maior, maior será o recorte das laterais do vídeo,
+    centralizando mais na vela em si.*/
+    height: 100%;
+    padding-left: 0;
+    pointer-events: none; /* Remove o ponteiro da tela para o usuário não interagir*/
+    object-fit: cover; /* Garante que o vídeo mantenha a proporção enquanto corta as laterais. */
+    position: absolute; /* Posiciona o elemento com base no seu elemento pai. */
+    left:50%;
+    transform: translateX(-50%); /* Centraliza o vídeo para que o recorte seja simétrico*/
+}
+
+
 
 footer#rodape {
     clear: both;
